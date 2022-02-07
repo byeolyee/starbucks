@@ -1,3 +1,5 @@
+// header submenu 검색
+
 const searchEl = document.querySelector('.search');
 const searchInputEl = searchEl.querySelector('input');
 
@@ -15,8 +17,12 @@ searchInputEl.addEventListener('blur', function () {
     searchInputEl.setAttribute('placeholder', '')
 })
 
-const badgeEl = document.querySelector('header .badges');
 
+
+
+//header badges 천천히 사라지고 나타나게 하는 애니메이션 
+
+const badgeEl = document.querySelector('header .badges');
 window.addEventListener('scroll', _.throttle(() => {
     console.log(window.scrollY);
     if (window.scrollY > 500) {
@@ -34,3 +40,14 @@ window.addEventListener('scroll', _.throttle(() => {
     }
 }, 300));
 //_.throttle(함수, 시간)
+
+
+
+//visual 이미지 순차적으로 나타내기
+const fadeEls = document.querySelectorAll(".visual .fade-in");
+fadeEls.forEach((fadeEl, index) => {
+    gsap.to(fadeEl, 1, {
+        delay: (index + 1) * .7, //0.7, 1.4, 2.1, 2.7
+        opacity: 1
+    });
+});

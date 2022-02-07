@@ -25,7 +25,65 @@ input{
     margin : 0 auto;
 }
 
+.btn{
+    width : 130px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    color : #333;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    transition: 0.4s;
+}
 
+.btn:hover{
+    background-color: #333;
+    color:#fff;
+}
+
+.btn.btn--reverse{
+    background-color: #333;
+    color : #fff;
+}
+
+.btn.btn--reverse:hover{
+    background-color: transparent;
+    color : #333;
+}
+
+.btn.btn--brown{
+    color: #592b18;
+    border-color: #592b18;
+}
+
+.btn.btn--brown:hover{
+    color: #fff;
+    background-color: #592b18;
+}
+
+.btn.btn--gold{
+    color: #d9aa8a;
+    border-color: #d9aa8a;
+}
+
+.btn.btn--gold:hover{
+    color: #fff;
+    background-color: #d9aa8a;
+}
+
+.btn.btn--white{
+    color : #fff;
+    border-color: #fff;
+}
+
+.btn.btn--gold:hover{
+    color : #333;
+    background-color: #fff;
+}
 /* ------------------HEADER------------------- */
 header{
     background-color: #f6f5f0;
@@ -33,6 +91,7 @@ header{
     position : fixed;
     top : 0;
     width:100%;
+    z-index : 1;
 }
 
 header > .inner{
@@ -189,11 +248,18 @@ header .main-menu .item .item__contents .contents__menu > ul > li h4:hover{
     text-decoration: underline;
 }
 
+header .main-menu .item .item__contents .contents__menu > ul > li ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 header .main-menu .item .item__contents .contents__menu > ul > li ul li{
     padding : 5px 0;
     font-size: 12px;
     color : #999;
     cursor: pointer;
+    --display : inline-block;
 }
 
 header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover{
@@ -230,4 +296,67 @@ header .badges .badge{
     margin-bottom: 12px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, .15);
     cursor: pointer;
+}
+
+/* ------------------VISUAL------------------- */
+
+.visual{
+    margin-top: 120px;
+    background-image: url("../images/visual_bg.jpg");
+    background-position: center;
+}
+
+.visual .inner{
+    height : 646px;
+}
+
+.visual .inner .title{
+    position: absolute;
+    top : 88px;
+    left : -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.visual .inner .title img{
+    
+}
+
+.visual .inner .title .btn{
+    margin : 24px;
+}
+
+.visual .inner .cup1.image{
+    position: absolute;
+    bottom: 0;
+    right: -47px;
+}
+
+.visual .inner .cup1.text{
+    position: absolute;
+    top: 38px;
+    right: 171px;
+}
+
+.visual .inner .cup2.image{
+    position: absolute;
+    bottom: 0;
+    right: 162px;
+}
+
+.visual .inner .cup2.text{
+    position: absolute;
+    top: 321px;
+    right: 416px;
+}
+
+.visual .inner .spoon{
+    position: absolute;
+    bottom: 0;
+    left: 275px;
+}
+
+.visual .inner .fade-in{
+    opacity: 0;
 }
