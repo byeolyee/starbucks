@@ -51,3 +51,12 @@ fadeEls.forEach((fadeEl, index) => {
         opacity: 1
     });
 });
+
+
+//NOTICE 슬라이드 기능 구현
+new Swiper('.notice-line .swiper-container', {
+    direction: 'vertical',
+    autoplay: true,
+    loop: true
+}); //js생성자
+
