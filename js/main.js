@@ -1,4 +1,7 @@
+
 // header submenu 검색
+
+// const { default: Swiper } = require("swiper");
 
 const searchEl = document.querySelector('.search');
 const searchInputEl = searchEl.querySelector('input');
@@ -24,7 +27,7 @@ searchInputEl.addEventListener('blur', function () {
 
 const badgeEl = document.querySelector('header .badges');
 window.addEventListener('scroll', _.throttle(() => {
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
     if (window.scrollY > 500) {
         //배지 숨기기
         gsap.to(badgeEl, 0.6, {
@@ -53,10 +56,30 @@ fadeEls.forEach((fadeEl, index) => {
 });
 
 
-//NOTICE 슬라이드 기능 구현
+//NOTICE slide 기능 구현
 new Swiper('.notice-line .swiper-container', {
     direction: 'vertical',
     autoplay: true,
     loop: true
 }); //js생성자
 
+
+//PROMOTION slide 구현
+new Swiper('.promotion .swiper-container', {
+    direction: 'horizontal',
+    slidesPerView: 3,
+    spaceBetween: 10,
+    centeredSlides: true,
+    autoplay: {
+        delay: 3000
+    },
+    loop: true,
+    pagination: {
+        el: '.promotion .swiper-pagination', //페이지 번호 요소 선택자 
+        clickable: true
+    },
+    navigation: {
+        prevEl: '.promotion .swiper-prev',
+        nextEl: '.promotion .swiper-next'
+    }
+});
