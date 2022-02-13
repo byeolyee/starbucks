@@ -86,6 +86,10 @@ input{
     color : #333;
     background-color: #fff;
 }
+
+/* .hide{
+    display : none;
+} */
 /* ------------------HEADER------------------- */
 header{
     background-color: #f6f5f0;
@@ -469,7 +473,12 @@ header .badges .badge{
     height: 693px;
     background-color: #f6f4ef;
     position: relative;
+    transition : height .4s;
     overflow: hidden;
+}
+
+.notice .promotion.hide{
+    height : 0;
 }
 
 .notice .promotion .swiper-container{
