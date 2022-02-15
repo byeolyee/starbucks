@@ -14,7 +14,7 @@
     <meta property="og:image" content="../images/starbucks_seo.jpg" />
     <meta property="og:url" content="https://starbucks.co.kr" />
 
-    <link rel="icon" href="./favicon.png" />
+    <link rel="icon" href="../favicon.png" />
     <!-- reset -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
     <!-- font -->
@@ -24,27 +24,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <!-- material-icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/signin.css" />
 
-    <!-- gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
-        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- swiper -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
-
-    <!-- lodash -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
-        integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
-        crossorigin="anonymous"></script>
-
-    <script defer src="js/common.js"></script>
-    <script defer src="js/main.js"></script>
+    <script defer src="../js/common.js"></script>
 </head>
 
 <body>
@@ -54,13 +37,13 @@
         <div class="inner">
 
             <a class="logo" href="/">
-                <img src="./images/starbucks_logo.png" alt="STARBUCKS" />
+                <img src="../images/starbucks_logo.png" alt="STARBUCKS" />
             </a>
 
             <div class="sub-menu">
                 <ul class="menu">
                     <li>
-                        <a href="./signin/index.html">Sign In</a>
+                        <a href="../signin/index.html">Sign In</a>
                     </li>
                     <li>
                         <a href="">My Starbucks</a>
@@ -383,114 +366,36 @@
                     </div>
                 </li>
             </ul>
-
-        </div>
-        <div class="badges">
-            <div class="badge">
-                <img src="./images/badge1.jpg" alt="Badge" />
-            </div>
-            <div class="badge">
-                <img src="./images/badge2.jpg" alt="Badge" />
-            </div>
         </div>
     </header>
 
-    <!-- VISUAL -->
-    <section class="visual">
-        <div class="inner">
-            <div class="title fade-in">
-                <img src="./images/visual_title.png" alt="STARBUCKS DELIGHTFUL START TO THE YEAR" />
-                <a href="javascript:void(0)" class="btn btn--brown">자세히보기</a>
-            </div>
-            <div class="fade-in">
-                <img src="./images/visual_cup1.png" alt="new OATMEAL LATTE" class="cup1 image" />
-                <img src="./images/visual_cup1_text.png" alt="오트밀라떼" class="cup1 text" />
-            </div>
-            <div class="fade-in">
-                <img src="./images/visual_cup2.png" alt="new STARBUCKS CARAMEL CRUMBLE MOCHA" class="cup2 image" />
-                <img src="./images/visual_cup2_text.png" alt="스타벅스 카라멜 크럼블 모카" class="cup2 text" />
-            </div>
-            <div class="fade-in">
-                <img src="./images/visual_spoon.png" alt="Spoon" class="spoon" />
-            </div>
-        </div>
-    </section>
-
-    <!-- NOTICE -->
-    <section class="notice">
-        <!-- NOTICE SLIDE -->
-        <div class="notice-line">
-            <div class="bg-left"></div>
-            <div class="bg-right"></div>
-            <div class="inner">
-                <div class="inner__left">
-                    <h2>공지사항</h2>
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">코로나 스타벅스 매장 영업시간 변경</a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">자바스크립트 리액트 뷰 공부하기</a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">나는 프론트개발 짱이될거야 그렇게 되고 말거야</a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">호랑이해 화이팅 별이도 할 수 있다</a>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="javascript:void(0)" class="notice-line__more">
-                        <div class="material-icons">add_circle</div>
-                    </a>
-                </div>
-                <div class="inner__right">
-                    <h2>스타벅스 프로모션</h2>
-                    <div class="toggle-promotion">
-                        <div class="material-icons">upload</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- NOTICE PROMOTION SLIDE -->
-        <div class="promotion">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./images/promotion_slide1.jpg" alt="2021년 뉴이어, 스타벅스와 함께">
-                        <a href="javascript:void(0)" class="btn">자세히보기</a>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./images/promotion_slide2.jpg" alt="3만원 이상 선물시 스타벅스 e쿠폰을 드립니다.">
-                        <a href="javascript:void(0)" class="btn">자세히보기</a>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./images/promotion_slide3.jpg" alt="뉴이어 푸드와 제조음료 구매시 BOGO쿠폰을 드립니다.">
-                        <a href="javascript:void(0)" class="btn">자세히보기</a>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./images/promotion_slide4.jpg" alt="신년 MD와 3만원 이상 구매고객께 아메리카노 쿠폰을 드립니다.">
-                        <a href="javascript:void(0)" class="btn">자세히보기</a>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./images/promotion_slide5.jpg" alt="100%당첨행운">
-                        <a href="javascript:void(0)" class="btn">자세히보기</a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-
-            <div class="swiper-prev">
-                <span class="material-icons">arrow_back</span>
-            </div>
-            <div class="swiper-next">
-                <span class="material-icons">arrow_forward</span>
+    <section class="signin">
+        <h1>로그인</h1>
+        <div class="signin__card">
+            <h2>
+                <strong>Welcome!</strong> 스타벅스에 오신 것을 환영합니다.
+            </h2>
+            <form>
+                <input type="text" placeholder="아이디를 입력하세요" name="userId" />
+                <input type="password" placeholder="비밀번호를 입력하세요" name="userPw" />
+                <input type="submit" value="로그인" />
+                <p>
+                    * 비밀번호를 타사이트와 같이 사용할 경우 도용 위험이 있으니,<br />
+                    정기적으로 비밀번호를 변경하세요
+                </p>
+            </form>
+            <div class="actions">
+                <a href="javascript:void(0)">회원가입</a>
+                <a href="javascript:void(0)">아이디 찾기</a>
+                <a href="javascript:void(0)">비밀번호 찾기</a>
             </div>
         </div>
     </section>
 
+    <!-- FOOTER -->
+    <footer>
 
+    </footer>
 </body>
 
 </html>
