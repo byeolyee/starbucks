@@ -374,6 +374,92 @@
 
 .youtube .inner .floating3 {
     position: absolute;
-    bottom: -200px;
+    bottom: 10px;
     right: 0;
+}
+
+/* ------------------SESON PRODUCT------------------- */
+.season-product {
+    background-image: url(../images/season_product_bg.jpg);
+}
+
+.season-product .inner {
+    height: 400px;
+}
+
+.season-product .text-group {
+    position: absolute;
+    top: 110px;
+    right: 100px;
+}
+
+.season-product .text-group .title {
+    margin-bottom: 10px;
+}
+
+.season-product .text-group .desc {
+    margin-bottom: 15px;
+}
+
+.season-product .more {}
+
+/* ------------------RESERVE COFFEE------------------- */
+
+.reserve-coffee {
+    background-image: url(../images/reserve_bg.jpg);
+}
+
+.reserve-coffee .inner {
+    height: 400px;
+}
+
+.reserve-coffee .inner .reserve-logo {
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+
+.reserve-coffee .inner .text-group {
+    position: absolute;
+    top: 124px;
+    left: 208px;
+}
+
+.reserve-coffee .inner .text-group .desc {}
+
+.reserve-coffee .inner .text-group .more {}
+
+.reserve-coffee .inner .product {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* ------------------PICK YOUR FAVORITE------------------- */
+
+.pick-your-favorite {
+    background-image: url(../images/favorite_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.pick-your-favorite .inner {
+    padding: 110px 0;
+}
+
+.pick-your-favorite .inner .text-group {
+    display: flex;
+    width: 362px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.pick-your-favorite .inner .text-group .title {
+    margin-bottom: 40px;
+}
+
+.pick-your-favorite .inner .text-group .desc {
+    margin-bottom: 40px;
 }
