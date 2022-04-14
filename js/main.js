@@ -1,6 +1,5 @@
 
 //header badges 천천히 사라지고 나타나게 하는 애니메이션 
-
 const badgeEl = document.querySelector('header .badges');
 window.addEventListener('scroll', _.throttle(() => {
     // console.log(window.scrollY);
@@ -93,3 +92,18 @@ function floatingObj(selector, delay, size) {
 floatingObj('.floating1', 1, 15);
 floatingObj('.floating2', 0.5, 15);
 floatingObj('.floating3', 1.5, 20);
+
+// ScrollMagic
+const spyEls = document.querySelectorAll('section.scroll-spy');
+spyEls.forEach((spyEl) => {
+    new ScrollMagic
+        .Scene({
+            triggerElement: spyEl, //보여지는 여부를 감시할 요소를 지정
+            triggerHook: .8,
+
+        })
+        .setClassToggle(spyEl, 'show')
+        .addTo(new ScrollMagic.Controller());
+    //Scene 특정 요소를 감시하는 옵션을 지정
+
+})

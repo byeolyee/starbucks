@@ -463,3 +463,115 @@
 .pick-your-favorite .inner .text-group .desc {
     margin-bottom: 40px;
 }
+
+/* ------------------RESERVE STORE------------------- */
+
+.reserve-store {
+    background-image: url(../images/reserve_store_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.reserve-store .inner {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserve-store .inner .medal {
+    width: 334px;
+    height: 334px;
+    perspective: 600px;
+}
+
+.reserve-store .inner .medal .front,
+.reserve-store .inner .medal .back {
+    width: 334px;
+    height: 334px;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.reserve-store .inner .medal .front {
+    transform: rotateY(0deg);
+}
+
+.reserve-store .inner .medal:hover .front {
+    transform: rotateY(180deg);
+}
+
+.reserve-store .inner .medal .back {
+    transform: rotateY(-180deg);
+}
+
+.reserve-store .inner .medal:hover .back {
+    transform: rotateY(0deg);
+}
+
+.reserve-store .inner .medal .back .btn {
+    position: absolute;
+    top: 240px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* ------------------FIND STORE------------------- */
+
+.find-store {
+    background-image: url(../images/find_store_bg.jpg);
+}
+
+.find-store .inner {
+    height: 400px;
+}
+
+.find-store .inner .texture1 {
+    position: absolute;
+    top: 0;
+    left: 400px;
+}
+
+.find-store .inner .texture2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.find-store .inner .picture {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
+}
+
+.find-store .inner .picture.picture1 {
+    top: -60px;
+    left: 0;
+}
+
+.find-store .inner .picture.picture2 {
+    top: 150px;
+    left: 250px;
+}
+
+.find-store .inner .text-group {
+    position: absolute;
+    top: 120px;
+    left: 550px;
+}
+
+.find-store .inner .text-group .title {
+    margin-bottom: 20px;
+}
+
+.find-store .inner .text-group .desc {
+    margin-bottom: 20px;
+}
+
+.find-store .inner .text-group .more {}
+
+.find-store .inner .text-group .more .btn {}
