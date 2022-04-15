@@ -1,6 +1,8 @@
 
-//header badges 천천히 사라지고 나타나게 하는 애니메이션 
+//header badges 천천히 사라지고 나타나게 하는 애니메이션 + scroll top
 const badgeEl = document.querySelector('header .badges');
+const scrollTop = document.querySelector('#to-the-top');
+
 window.addEventListener('scroll', _.throttle(() => {
     // console.log(window.scrollY);
     if (window.scrollY > 500) {
@@ -9,17 +11,29 @@ window.addEventListener('scroll', _.throttle(() => {
             opacity: 0,
             display: 'none'
         });
+        //top 버튼 보이기
+        gsap.to(scrollTop, .5, {
+            x: 0
+        })
     } else {
         //배지 보이기
         gsap.to(badgeEl, 0.6, {
             opacity: 1,
             display: 'block'
         })
+        //top 버튼 숨기기
+        gsap.to(scrollTop, .5, {
+            x: 100
+        });
     }
 }, 300));
 //_.throttle(함수, 시간)
 
-
+scrollTop.addEventListener('click', () => {
+    gsap.to(window, .7, {
+        scrollTo: 0,
+    })
+})
 
 //visual 이미지 순차적으로 나타내기
 const fadeEls = document.querySelectorAll(".visual .fade-in");
@@ -58,6 +72,7 @@ new Swiper('.promotion .swiper-container', {
         nextEl: '.promotion .swiper-next'
     }
 });
+
 
 const promotionEl = document.querySelector('.promotion');
 const promotionToggleBtn = document.querySelector('.toggle-promotion');
@@ -107,3 +122,24 @@ spyEls.forEach((spyEl) => {
     //Scene 특정 요소를 감시하는 옵션을 지정
 
 })
+
+//AWARDS slide
+new Swiper('.awards .swiper-container', {
+    direction: 'horizontal',
+    slidesPerView: 5,
+    spaceBetween: 30,
+    autoplay: {
+        delay: 3000
+    },
+    loop: true,
+    navigation: {
+        prevEl: '.awards .swiper-prev',
+        nextEl: '.awards .swiper-next'
+    }
+});
+
+//FOOTER 해당연도 기입
+const el = document.querySelector('.this-year');
+const date = new Date();
+const year = date.getFullYear();
+el.textContent = year;
